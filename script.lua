@@ -1,6 +1,47 @@
 -- ======================================================
 --   HabiMs - AUTO MARSHMALLOW (Fixed)
 -- ======================================================
+-- HabiMs UI
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Name = "HabiMs_UI"
+
+Frame.Parent = ScreenGui
+Frame.Size = UDim2.new(0, 300, 0, 200)
+Frame.Position = UDim2.new(0.5, -150, 0.5, -100)
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.Active = true
+Frame.Draggable = true
+
+Title.Parent = Frame
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Title.Text = "HabiMs"
+Title.TextColor3 = Color3.fromRGB(0, 255, 127)
+Title.TextScaled = true
+
+Button.Parent = Frame
+Button.Size = UDim2.new(0.8, 0, 0, 50)
+Button.Position = UDim2.new(0.1, 0, 0.5, 0)
+Button.Text = "Start Auto Farm"
+Button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+-- FUNCTION (isi logic kamu di sini)
+Button.MouseButton1Click:Connect(function()
+    print("HabiMs Auto Farm Aktif!")
+
+    -- contoh logic (ganti dengan punyamu)
+    while true do
+        wait(1)
+        print("Farming...")
+    end
+end)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
