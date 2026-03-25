@@ -1,3 +1,7 @@
+-- ======================================================
+--   HabiMs - AUTO MARSHMALLOW (Fixed)
+-- ======================================================
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -15,9 +19,6 @@ Title.BackgroundTransparency = 1
 Title.Text = "HabiMs"
 Title.TextColor3 = Color3.fromRGB(0, 255, 127)
 Title.TextScaled = true
--- ======================================================
---   HabiMs - AUTO MARSHMALLOW (Fixed)
--- ======================================================
 
 local Players      = game:GetService("Players")
 local TweenSvc     = game:GetService("TweenService")
