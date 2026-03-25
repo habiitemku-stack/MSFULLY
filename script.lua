@@ -1,3 +1,20 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.Size = UDim2.new(0, 300, 0, 100)
+Frame.Position = UDim2.new(0.5, -150, 0.1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+
+Title.Parent = Frame
+Title.Size = UDim2.new(1, 0, 0, 50)
+Title.BackgroundTransparency = 1
+Title.Text = "HabiMs"
+Title.TextColor3 = Color3.fromRGB(0, 255, 127)
+Title.TextScaled = true
 -- ======================================================
 --   HabiMs - AUTO MARSHMALLOW (Fixed)
 -- ======================================================
